@@ -1,5 +1,6 @@
 
 import "./App.scss";
+import Intro from "./components/intro/Intro";
 import NavBar from "./components/navbar/NavBar";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <div className="app">
         <NavBar/>
+        <Intro/>
       </div>
     </>
   );

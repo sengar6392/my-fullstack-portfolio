@@ -1,0 +1,85 @@
+.intro {
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .left {
+      flex: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .my-image {
+        height: 20rem;
+        width: 20rem;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .right {
+      flex: 0.5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 1rem;
+      position: relative;
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+          font-size: 60px;
+          margin: 10px 0;
+        }
+        h2 {
+          font-size: 35px;
+        }
+        h3 {
+          font-size: 30px;
+        }
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+  
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+  
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%);
+      .arrow-down {
+        font-size: 60px;
+        color: black;
+        font-weight: 100;
+        animation: blinkIcon 2s infinite;
+      }
+      @keyframes blinkIcon {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
