@@ -50,7 +50,7 @@ const Portfolio = () => {
         transition={{ duration: 0.5 }}
       >
         {filteredWorks.map((work) => (
-          <div key={work.name} className="app__work-item app__flex">
+          <div key={work._id} className="app__work-item app__flex">
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
               <motion.div
