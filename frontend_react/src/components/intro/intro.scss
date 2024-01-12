@@ -1,6 +1,6 @@
 .intro {
     display: flex;
-    background-color: white;
+   
     height: 100vh;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,7 +48,7 @@
         }
         span {
           font-size: inherit;
-          color: crimson;
+          color: var(--secondary-color);
         }
   
         .ityped-cursor {

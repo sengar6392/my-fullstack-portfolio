@@ -1,0 +1,97 @@
+.app__work-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  .app__work-filter-item {
+    margin: 1rem 0;
+    padding: 6px 12px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+    transition: all 1s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+  }
+  .item-active {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+.app__work-portfolio {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  .app__work-item {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease;
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+    .app__work-img {
+      height: 10rem;
+      width: 100%;
+      position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+        object-fit: cover;
+      }
+      .app__work-hover {
+        position: absolute;
+        border-radius: 0.5rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        div {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+          display: flex;
+          width: 50px;
+          height: 50px;
+          justify-content: center;
+          align-items: center;
+          font-family: var(--font-base);
+          font-weight: 800;
+          cursor: pointer;
+          margin: 1rem;
+          svg {
+            width: 50%;
+            height: 50%;
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+    .app__work-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      margin-top: 10px;
+      height: 6rem;
+    }
+  }
+}

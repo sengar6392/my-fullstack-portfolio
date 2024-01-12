@@ -19,16 +19,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  
-    img {
-      width: 90px;
-      height: 20px;
-  
-      @media screen and (min-width: 2000px) {
-        width: 180px;
-        height: 40px;
-      }
-    }
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 20px;
   }
   
   .app__navbar-links {
