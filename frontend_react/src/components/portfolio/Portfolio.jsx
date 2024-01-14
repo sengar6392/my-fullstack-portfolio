@@ -3,6 +3,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { client, urlFor } from "../../client";
 import { motion } from "framer-motion";
 import "./portfolio.scss";
+import AppWrapper from "../../utils/wrappers/AppWrapper";
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("All");
   const [works, setWorks] = useState([]);
@@ -93,4 +94,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default AppWrapper(Portfolio);
