@@ -38,13 +38,13 @@ const Intro = () => {
             </h3>
           )} */}
           <h3>
-              React <span ref={textRef}></span>
-            </h3>
+            React <span ref={textRef}></span>
+          </h3>
         </div>
       </div>
-      <a href="#skills">
+      {/* <a href="#skills">
         <IoIosArrowDown className="arrow-down" />
-      </a>
+      </a> */}
     </div>
   );
 };

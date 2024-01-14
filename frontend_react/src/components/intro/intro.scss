@@ -82,10 +82,10 @@
     }
     a {
       position: absolute;
-      bottom: 10px;
-      left: 50%;
+      bottom: 0;
+      right: 0;
       transform: translate(-50%);
-      @media screen and (max-width:450px) {
+      @media screen and (max-width:762px) {
         display: none;
       }
       .arrow-down {
