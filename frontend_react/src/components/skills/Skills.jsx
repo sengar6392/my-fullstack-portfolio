@@ -10,7 +10,7 @@ const Skills = () => {
     client.fetch(query).then((data) => setSkills(data));
   }, []);
   return (
-    <div className="app__skills">
+    <div className="app__skills" id="skills">
       <h2 className="head-text">Skills</h2>
 
       <motion.div

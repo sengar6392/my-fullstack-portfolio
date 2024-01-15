@@ -52,8 +52,8 @@ const Contact = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+91 6392926094" className="p-text">
-            6392926094
+          <a href="https://www.linkedin.com/in/shivam-sengar-535859192/" target="blank" className="p-text">
+          linkedin.com/in/shivam-sengar-535859192/
           </a>
         </div>
       </div>

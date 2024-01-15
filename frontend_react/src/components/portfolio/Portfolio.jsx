@@ -5,11 +5,10 @@ import { motion } from "framer-motion";
 import "./portfolio.scss";
 import AppWrapper from "../../utils/wrappers/AppWrapper";
 const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState("All");
+  // const [activeTab, setActiveTab] = useState("All");
   const [works, setWorks] = useState([]);
   const [filteredWorks, setFilteredWorks] = useState([]);
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-  console.log(activeTab);
+  // const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   useEffect(() => {
     const query = '*[_type == "works"]';
 
@@ -18,20 +17,20 @@ const Portfolio = () => {
       setFilteredWorks(data);
     });
   }, []);
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-    setAnimateCard({ y: 100, opacity: 0 });
-    setTimeout(() => {
-      setAnimateCard({ y: 0, opacity: 1 });
-    }, 500);
-  };
-  console.log("works", works);
+  // const handleTabClick = (tab) => {
+  //   setActiveTab(tab);
+  //   setAnimateCard({ y: 100, opacity: 0 });
+  //   setTimeout(() => {
+  //     setAnimateCard({ y: 0, opacity: 1 });
+  //   }, 500);
+  // };
+
   return (
-    <div>
+    <div id="portfolio">
       <div className="head-text">
         My Creative <span>Portfolio</span> Section
       </div>
-      <div className="app__work-filter">
+      {/* <div className="app__work-filter">
         {["All", "React", "Javascript", "Static"].map((tab) => (
           <div
             key={tab}
@@ -43,10 +42,10 @@ const Portfolio = () => {
             {tab}
           </div>
         ))}
-      </div>
+      </div> */}
       <motion.div
         className="app__work-portfolio"
-        animate={animateCard}
+        // animate={animateCard}
         whileInView={{ scale: [0.8, 1] }}
         transition={{ duration: 0.5 }}
       >

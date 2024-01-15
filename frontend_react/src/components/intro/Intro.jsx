@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./intro.scss";
-import { IoIosArrowDown } from "react-icons/io";
+// import { IoIosArrowDown } from "react-icons/io";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { images } from "../../constants";
@@ -17,7 +17,7 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro" id="intro">
+    <div className="intro" id="home">
       <div className="left">
         <div className="my-image">
           <img src={images.myImage} alt="my-image" />
